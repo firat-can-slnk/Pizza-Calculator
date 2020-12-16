@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  PizzaPreisLeistungiOS
+
+  Created by Firat-Can Sülünkü on 12.08.18.
+  Copyright © 2018 Firat-Can Sülünkü. All rights reserved.
+*/
+"Pizza hinzufügen" = "Add pizza";
+"Name der Pizza" = "Name of the pizza";
+"Name der Pizzeria" = "Name of the pizzeria";
+"Durchmesser in cm (Format: xx)" = "Diameter in cm (format: xx)";
+"Preis der Pizza in Euro (Format: xx.xx)" = "Price in Euro (format: xx.xx)";
+"Hinzufügen" = "Add";
+"Fehler" = "Error";
+"Bitte alle Felder ausfüllen" = "Please fill in all fields";
+"Okay" = "OK";
+"Bitte das richtige Format für den Durchmesser und den Preis nutzen! \n\n Zum Beispiel: \"32\" für 32cm und \"10.50\" für 10,50€" = "Please use the right format for the diameter and the price! \n\n For example: \"32\" for 32cm and \"10.50\" for 10,50 €";
+"Bitte das richtige Format für den Durchmesser nutzen! \n\n Zum Beispiel: \"32\" für 32cm" = "Please use the right format for the diameter! \n\n For example: \"32\" for 32cm";
+"Bitte das richtige Format für den Preis nutzen! \n\n Zum Beispiel: \"10.50\" für 10,50€" = "Please use the right format for the price! \n\n For example: \"10.50\" for 10.50 €";
+"Abbrechen" = "Cancel";
+"Fertig" = "Done";
+"Bearbeiten" = "Edit";
+"Form der Pizza?" = "Shape of the pizza?";
+"Rund" = "Round";
+"Rechteckig" = "Rectangular";
+"Länge der 1. Seite in cm (Format: xx)" = "Length of the 1st side in cm (format: xx)";
+"Länge der 2. Seite in cm (Format: xx)" = "Length of the 2nd side in cm (format: xx)";
+"Pizzeria" = "Pizzeria";
+"Pizza" = "Pizza";
+"Durchmesser" = "Diameter";
+"Preis" = "Price";
+"Faktor" = "Factor ";
+"Erste Seite" = "First side";
+"Zweite Seite" = "Second side";
+"Name" = "Name";
+"Kosten" = "Costs";
+"Maße" = "Dimensions";
+"Was bedeutet Faktor?" = "What does factor mean?";
+"Der Faktor steht für Fläche pro Euro/Dollar, je höher der Faktor ist, desto besser ist das Preis Leistungs Verhältnis. Höher ist demnach besser." = "The factor stands for area per euro/dollar, the higher the factor, the better the price performance ratio. Higher is therefore better.";
