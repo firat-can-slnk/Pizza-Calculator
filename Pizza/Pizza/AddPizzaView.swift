@@ -98,6 +98,7 @@ struct AddPizzaView: View {
             Section(header: Text("Kosten"), footer: Text("FactorDescription"), content: {
                 HStack {
                     TextField("\(NSLocalizedString("Preis", comment: "Preis")) (format: 6.90)", text: $price)
+                        .minimumScaleFactor(0.5)
                         .onReceive(Just(price)) { newValue in
                             let filtered = newValue.filter { "0123456789.".contains($0) }
                             if filtered != newValue {
@@ -119,7 +120,7 @@ struct AddPizzaView: View {
                     
                     if PizzaType.init(rawValue: type) == .round
                     {
-                        let text = String(Pizza.factor(radius: Int(diameter == "" ? "0" : diameter) ?? 0, price: Double(price == "" ? "0" : price) ?? 0, size: Sizes.init(rawValue: size)!))
+                        let text = String(Pizza.factor(radius: Int(diameter == "" ? "0" : diameter) ?? 0, price: Double(price == "" ? "0" : price) ?? 0, size: Sizes.init(rawValue: size)!, currency: Currency.init(rawValue: currency)!))
                         Text(text == "0.0" ? "n/a" : text)
                     }
                     else if PizzaType.init(rawValue: type) == .rectangle
@@ -127,7 +128,7 @@ struct AddPizzaView: View {
                         let text = String(Pizza.factor(
                                         firstSide: Int(firstSide == "" ? "0" : firstSide) ?? 0,
                                           secondSize: Int(secondSide == "" ? "0" : secondSide) ?? 0,
-                                            price: Double(price == "" ? "0" : price) ?? 0, size: Sizes.init(rawValue: size)!))
+                                            price: Double(price == "" ? "0" : price) ?? 0, size: Sizes.init(rawValue: size)!, currency: Currency.init(rawValue: currency)!))
                         
                         Text(text == "0.0" ? "n/a" : text)
                     }

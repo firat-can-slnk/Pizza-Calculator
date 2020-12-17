@@ -14,6 +14,16 @@
       "filename" : "rund.png",
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "filename" : "rund-3.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "rund-4.png",
+      "idiom" : "mac",
+      "scale" : "2x"
     }
   ],
   "info" : {
