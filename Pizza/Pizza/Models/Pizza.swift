@@ -55,21 +55,30 @@ public class Pizza: Identifiable {
         case .round:
             return Pizza.factor(radius: self.diameter ?? 0,
                                 price: self.price,
-                                size: self.sizes)
+                                size: self.sizes,
+                                currency: self.currency)
         case .rectangle:
             return Pizza.factor(firstSide: self.firstSide ?? 0,
                                 secondSize: self.secondSize ?? 0,
                                 price: self.price,
-                                size: self.sizes)
+                                size: self.sizes,
+                                currency: self.currency)
         }
         
     }
     
-    public static func factor(radius: Int, price: Double, size: Sizes) -> Double
+    public static func factor(radius: Int, price: Double, size: Sizes, currency: Currency) -> Double
     {
+        if price == 0
+        {
+            return 0
+        }
+        let currencyConverter = CurrencyConverter()
+        currencyConverter.updateExchangeRates()
         let pi:Double = 3.1415926535897
         var ret: Double = 0
-        
+        var convertedPrice = price
+            convertedPrice = currencyConverter.convert(convertedPrice, valueCurrencyConverterCurrency: .EUR, outputCurrencyConverterCurrency: currency.toConverter()) ?? price
         if size == .metric
         {
             ret = Double(radius) / 2
@@ -82,21 +91,29 @@ public class Pizza: Identifiable {
             
         ret = ret * ret
         ret = pi * ret
-        ret = ret / (price == 0 ? 1 : price)
+        ret = ret / convertedPrice
         
         ret = Double(String(format: "%.1f", ret)) ?? 0
         return ret
     }
-    public static func factor(firstSide: Int, secondSize: Int, price: Double, size: Sizes) -> Double
+    public static func factor(firstSide: Int, secondSize: Int, price: Double, size: Sizes, currency: Currency) -> Double
     {
+        if price == 0
+        {
+            return 0
+        }
+        let currencyConverter = CurrencyConverter()
+        currencyConverter.updateExchangeRates()
         var ret: Double = 0
+        var convertedPrice = price
+            convertedPrice = currencyConverter.convert(convertedPrice, valueCurrencyConverterCurrency: .EUR, outputCurrencyConverterCurrency: currency.toConverter()) ?? price
         if size == .metric
         {
-            ret = (Double(firstSide) * Double(secondSize)) / (price == 0 ? 1 : price)
+            ret = (Double(firstSide) * Double(secondSize)) / convertedPrice
         }
         else
         {
-            ret = ((Double(firstSide) * 2.54) * (Double(secondSize)) * 2.54) / (price == 0 ? 1 : price)
+            ret = ((Double(firstSide) * 2.54) * (Double(secondSize)) * 2.54) / convertedPrice
         }
         
         ret = Double(String(format: "%.1f", ret)) ?? 0

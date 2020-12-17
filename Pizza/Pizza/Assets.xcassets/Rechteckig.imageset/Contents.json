@@ -14,6 +14,16 @@
       "filename" : "rechteckig.png",
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "filename" : "rechteckig-3.png",
+      "idiom" : "mac",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "rechteckig-4.png",
+      "idiom" : "mac",
+      "scale" : "2x"
     }
   ],
   "info" : {

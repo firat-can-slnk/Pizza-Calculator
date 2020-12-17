@@ -32,4 +32,15 @@ public enum Currency: Int {
             return "\(price) £"
         }
     }
+    func toConverter() -> CurrencyConverterCurrency
+    {
+        switch self {
+        case .EUR:
+            return CurrencyConverterCurrency.EUR
+        case .USD:
+            return CurrencyConverterCurrency.USD
+        case .GBP:
+            return CurrencyConverterCurrency.GBP
+        }
+    }
 }

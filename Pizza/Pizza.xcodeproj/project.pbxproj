@@ -22,6 +22,7 @@
 		9F57BC4325893E11003E4FCE /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57BC4225893E11003E4FCE /* Pizza.swift */; };
 		9F57BC50258948A6003E4FCE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57BC4F258948A6003E4FCE /* Currency.swift */; };
 		9F57BC5525894A94003E4FCE /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57BC5425894A94003E4FCE /* Sizes.swift */; };
+		9F6BBADF258B8512002876CB /* CurrencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BBADE258B8512002876CB /* CurrencyConverter.swift */; };
 		9F7AE50C25894E380021CEEE /* AddPizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE50B25894E380021CEEE /* AddPizzaView.swift */; };
 		9F7AE511258958160021CEEE /* rund.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7AE510258958160021CEEE /* rund.png */; };
 		9F7AE51F25897A910021CEEE /* StringAndPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7AE51E25897A910021CEEE /* StringAndPizza.swift */; };
@@ -70,6 +71,7 @@
 		9F57BC4225893E11003E4FCE /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		9F57BC4F258948A6003E4FCE /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		9F57BC5425894A94003E4FCE /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		9F6BBADE258B8512002876CB /* CurrencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverter.swift; sourceTree = "<group>"; };
 		9F7AE50B25894E380021CEEE /* AddPizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPizzaView.swift; sourceTree = "<group>"; };
 		9F7AE510258958160021CEEE /* rund.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rund.png; sourceTree = "<group>"; };
 		9F7AE51E25897A910021CEEE /* StringAndPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAndPizza.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				9F57BC3725893D85003E4FCE /* Images */,
 				9F57BC2325893D21003E4FCE /* LaunchScreen.storyboard */,
 				9F57BC1F25893CD0003E4FCE /* Pizza.entitlements */,
+				9F6BBADE258B8512002876CB /* CurrencyConverter.swift */,
 				9F57BBE925893C7D003E4FCE /* PizzaApp.swift */,
 				9F7AE51E25897A910021CEEE /* StringAndPizza.swift */,
 				9F57BBEB25893C7D003E4FCE /* ContentView.swift */,
@@ -309,8 +312,8 @@
 				9F7AE52A25898D550021CEEE /* LaunchScreenIcon.png in Resources */,
 				9F57BBF125893C7E003E4FCE /* Preview Assets.xcassets in Resources */,
 				9F7AE511258958160021CEEE /* rund.png in Resources */,
-				9F57BBEE25893C7E003E4FCE /* Assets.xcassets in Resources */,
 				9F57BC3B25893D90003E4FCE /* rechteckig.png in Resources */,
+				9F57BBEE25893C7E003E4FCE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +345,7 @@
 				9F7AE50C25894E380021CEEE /* AddPizzaView.swift in Sources */,
 				9F57BC5525894A94003E4FCE /* Sizes.swift in Sources */,
 				9F57BC4325893E11003E4FCE /* Pizza.swift in Sources */,
+				9F6BBADF258B8512002876CB /* CurrencyConverter.swift in Sources */,
 				9F7AE51F25897A910021CEEE /* StringAndPizza.swift in Sources */,
 				9F57BC50258948A6003E4FCE /* Currency.swift in Sources */,
 				9F57BBEA25893C7D003E4FCE /* PizzaApp.swift in Sources */,
@@ -515,7 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pizza/Pizza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 200;
+				CURRENT_PROJECT_VERSION = 205;
 				DEVELOPMENT_ASSET_PATHS = "\"Pizza/Preview Content\"";
 				DEVELOPMENT_TEAM = VXC6ZH9W86;
 				ENABLE_PREVIEWS = YES;
@@ -525,7 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = firat.apps.PizzaPreisLeistungiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -542,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Pizza/Pizza.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 200;
+				CURRENT_PROJECT_VERSION = 205;
 				DEVELOPMENT_ASSET_PATHS = "\"Pizza/Preview Content\"";
 				DEVELOPMENT_TEAM = VXC6ZH9W86;
 				ENABLE_PREVIEWS = YES;
@@ -552,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = firat.apps.PizzaPreisLeistungiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
