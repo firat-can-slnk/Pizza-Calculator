@@ -61,10 +61,20 @@ struct ContentView: View {
                         
                     }
                     .onDelete(perform: delete)
+                    .onMove(perform: move)
                 }
-                .navigationBarItems(leading: EditButton(), trailing:  Button(action: {showAddPizza = true}, label: {
-                    Text("Pizza hinzufügen")
-                }))
+                .toolbar {
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                        EditButton()
+                    }
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                        Button(action: {showAddPizza = true}, label: {
+                            Text("Pizza hinzufügen")
+                        })
+                    }
+                    
+                    
+                }
                 .navigationTitle("Pizzen")
                 .listStyle(InsetGroupedListStyle())
                 .sheet(isPresented: self.$showAddPizza) {
@@ -93,6 +103,10 @@ struct ContentView: View {
     }
     func delete(at offsets: IndexSet) {
         itemsInList.remove(atOffsets: offsets)
+        UpdateStorage()
+    }
+    func move(from source: IndexSet, to destination: Int) {
+        itemsInList.move(fromOffsets: source, toOffset: destination)
         UpdateStorage()
     }
 }
