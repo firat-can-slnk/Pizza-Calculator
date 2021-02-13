@@ -6,6 +6,7 @@ You enter the name of the pizza, the name of the pizzeria, the diameter of the p
 
 Now with rectangular pizzas, different size units and multiple currencies (with conversion)!
 
+[AppStore Link](https://apps.apple.com/us/app/pizza-preis-leistung/id1425063901)
 ## iOS - Screenshots
 |  |  |  |  |
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
