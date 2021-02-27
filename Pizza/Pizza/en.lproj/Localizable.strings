@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  PizzaPreisLeistungiOS
+
+  Created by Firat-Can Sülünkü on 12.08.18.
+  Copyright © 2018 Firat-Can Sülünkü. All rights reserved.
+*/
+"Pizza hinzufügen" = "Add a pizza";
+"Name der Pizza" = "Name of the pizza";
+"Name der Pizzeria" = "Name of the pizzeria";
+"Durchmesser in cm (Format: xx)" = "Diameter in cm (format: xx)";
+"Preis der Pizza in Euro (Format: xx.xx)" = "Price in Euro (format: xx.xx)";
+"Hinzufügen" = "Add";
+"Fehler" = "Error";
+"Bitte alle Felder ausfüllen" = "Please fill in all fields";
+"Okay" = "OK";
+"Bitte das richtige Format für den Durchmesser und den Preis nutzen! \n\n Zum Beispiel: \"32\" für 32cm und \"10.50\" für 10,50€" = "Please use the right format for the diameter and the price! \n\n For example: \"32\" for 32cm and \"10.50\" for 10,50 €";
+"Bitte das richtige Format für den Durchmesser nutzen! \n\n Zum Beispiel: \"32\" für 32cm" = "Please use the right format for the diameter! \n\n For example: \"32\" for 32cm";
+"Bitte das richtige Format für den Preis nutzen! \n\n Zum Beispiel: \"10.50\" für 10,50€" = "Please use the right format for the price! \n\n For example: \"10.50\" for 10.50 €";
+"Abbrechen" = "Cancel";
+"Fertig" = "Done";
+"Bearbeiten" = "Edit";
+"Form der Pizza?" = "Shape of the pizza?";
+"Rund" = "Round";
+"Rechteckig" = "Square";
+"Länge der 1. Seite in cm (Format: xx)" = "Length of the 1st side in cm (format: xx)";
+"Länge der 2. Seite in cm (Format: xx)" = "Length of the 2nd side in cm (format: xx)";
+"Pizzeria" = "Pizzeria";
+"Pizzen" = "Pizzas";
+"Durchmesser" = "Diameter";
+"Preis" = "Price";
+"Faktor" = "Factor ";
+"Erste Seite" = "First side";
+"Zweite Seite" = "Second side";
+"Name" = "Name";
+"Kosten" = "Costs";
+"Maße" = "Dimensions";
+"Was bedeutet Faktor?" = "What does factor mean?";
+"FactorDescription" = "The factor stands for area per euro/dollar, the higher the factor, the better the price performance ratio.\nHigher is therefore better.";
+"Die Liste ist leer\n\nBitte füge eine Pizza hinzu indem du oben rechts auf den Button drückst" = "The list is empty.\n\nPlease add a pizza by pressing the button in the upper right corner";
+
+"Fehler beim hinzufügen der Pizza\n\n" = "Error while adding the pizza\n\n";
+"Name der Pizza fehlt\n" = "Name of the pizza is missing\n";
+"Größe der ersten Seite fehlt\n" = "First side size is missing\n";
+"Größe der ersten Seite ist keine Zahl\n" = "First side size is not a number\n";
+"Größe der zweiten Seite fehlt\n" = "Second side size is missing\n";
+"Größe der zweiten Seite ist keine Zahl\n" = "Second side size is not a number\n";
+"Durchmesser fehlt\n" = "Diameter is missing\n";
+"Durchmesser ist keine Zahl\n" = "Diameter is not a number\n";
+"Preis fehlt\n" = "Price is missing\n";
+"Preis ist keine Zahl\n" = "Price is not a number\n";
+"Währung fehlt\n" = "Currency is missing\n";
+"Größeneinheit fehlt\n" = "Size unit is missing\n";
