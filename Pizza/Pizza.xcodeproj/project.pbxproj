@@ -64,8 +64,8 @@
 		9F57BC0D25893C7E003E4FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F57BC1F25893CD0003E4FCE /* Pizza.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pizza.entitlements; sourceTree = "<group>"; };
 		9F57BC2325893D21003E4FCE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9F57BC2E25893D3F003E4FCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../../../../../Nextcloud/XCode/PizzaPreisLeistungiOS/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9F57BC2F25893D3F003E4FCE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = ../../../../../../Nextcloud/XCode/PizzaPreisLeistungiOS/de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F57BC2E25893D3F003E4FCE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../Pizza/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9F57BC2F25893D3F003E4FCE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = ../Pizza/de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9F57BC3825893D90003E4FCE /* rechteckig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rechteckig.png; sourceTree = "<group>"; };
 		9F57BC3925893D90003E4FCE /* questionmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = questionmark.png; sourceTree = "<group>"; };
 		9F57BC4225893E11003E4FCE /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
