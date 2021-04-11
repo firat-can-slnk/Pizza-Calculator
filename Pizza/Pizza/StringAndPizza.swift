@@ -109,6 +109,7 @@ public func StringToPizza(str: String) -> Pizza
     
     
     return ret
+return nil
 }
 public func PizzaArrayToString(pizza: [Pizza]) -> String
 {
